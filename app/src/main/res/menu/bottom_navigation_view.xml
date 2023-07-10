@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/play"
+        android:title="Play"
+        android:icon="@drawable/play" />
+    <item
+        android:id="@+id/ranks"
+        android:title="Ranks"
+        android:icon="@drawable/ranks" />
+    <item
+        android:id="@+id/watch"
+        android:title="Watch"
+        android:icon="@drawable/watch" />
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/profile" />
+</menu>

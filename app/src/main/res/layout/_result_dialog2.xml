@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/_dialog1"
+    android:layout_width="250dp"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Won"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#381E72"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/how"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By Checkmate"
+        android:textSize="15sp"
+        android:textColor="#381E72"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winner" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/ok"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/_dialog0"
+        android:padding="5dp"
+        android:text="OK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/how" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

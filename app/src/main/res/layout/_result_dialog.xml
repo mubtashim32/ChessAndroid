@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/_dialog1"
+    android:layout_width="wrap_content"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/rrr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Won"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#381E72"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/how"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By Checkmate"
+        android:textSize="15sp"
+        android:textColor="#381E72"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rrr" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/rr"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating: 800 + 60"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#4F378B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/how" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/review"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Review"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/_dialog0"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rr" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/newgame"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/_dialog0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/rr" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:padding="0dp"
+        android:src="@drawable/ic_baseline_close_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
